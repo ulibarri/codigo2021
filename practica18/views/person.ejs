@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/style.css"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>Person Name: <%= Name %></h1>
+        <h2>Mensaje: <%= Message %></h2>
+
+
+            <% switch (Message) {
+                case 'Hola' : %>
+
+                        <% for (var i =1; i <=Times;  i++ ) { %>
+                            <br/>  <%=  Message %> <%=  Name %> 
+                            <%#  will output the numbers 1-10 %>
+                            <% } %>
+                        <% break;
+                
+                case 'Adios' : %>
+                        <% for (var i =1; i <=Times;  i++ ) { %>
+                            <br/>  <%=  Message %> <%=  Name %> 
+                            <%#  will output the numbers 1-10 %>
+                        <% } %>
+
+                        <% break;
+                
+                case 'Bienvenido' : %>
+                        <% for (var i =1; i <=Times;  i++ ) { %>
+                            <br/>  <%=  Message %> <%=  Name %> 
+                            <%#  will output the numbers 1-10 %>
+                            <% } %>
+                        <% break;
+                
+                } %>
+</body>
+</html>
